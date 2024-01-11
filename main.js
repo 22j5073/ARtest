@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let video = null;
   const init = async () => {
-    video = await loadVideo("view.MOV");
+    video = await loadVideo("maruta.MP4");
     texture = new THREE.VideoTexture(video);
     video.play();
     video.pause();
@@ -16,12 +16,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const start = async () => {
     const mindarThree = new window.MINDAR.IMAGE.MindARThree({
       container: document.body,
-      imageTargetSrc: './assets/targets/test1.mind',
+      imageTargetSrc: './assets/targets/maruta.mind',
     });
     const { renderer, scene, camera } = mindarThree;
 
     // const video = await loadVideo("./assets/videos/sintel/snow.mp4");
-    const video = await loadVideo("view.MOV");
+    const video = await loadVideo("maruta.MP4");
     const texture = new THREE.VideoTexture(video);
 
     const geometry = new THREE.PlaneGeometry(1, 204 / 480);
