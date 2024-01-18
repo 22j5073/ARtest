@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const video = await loadVideo("kyokai.mp4");
     const texture = new THREE.VideoTexture(video);
 
-    const geometry = new THREE.PlaneGeometry(612 / 480, 3);
+    const geometry = new THREE.PlaneGeometry(408 / 480, 2);
     const material = new THREE.MeshBasicMaterial({ map: texture });
     const plane = new THREE.Mesh(geometry, material);
 
