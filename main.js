@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let video = null;
   const init = async () => {
-    video = await loadVideo("kyokai.mp4");
+    video = await loadVideo("Istanbul.mp4");
     texture = new THREE.VideoTexture(video);
     video.play();
     video.pause();
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const { renderer, scene, camera } = mindarThree;
 
     // const video = await loadVideo("./assets/videos/sintel/snow.mp4");
-    const video = await loadVideo("kyokai.mp4");
+    const video = await loadVideo("Istanbul.mp4");
     const texture = new THREE.VideoTexture(video);
 
     const geometry = new THREE.PlaneGeometry(408 / 480, 2);
